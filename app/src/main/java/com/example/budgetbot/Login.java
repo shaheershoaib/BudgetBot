@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import java.io.BufferedReader;
@@ -24,6 +26,7 @@ public class Login extends AppCompatActivity {
 
         Button backButtonLogin = (Button)findViewById(R.id.back_button_login);
         Intent backButtonLoginIntent = new Intent(this, HomeScreen.class);
+        Intent shopIntentFromLogin = new Intent(this, Shop.class);
 
 
         backButtonLogin.setOnClickListener(new View.OnClickListener() {
@@ -81,11 +84,13 @@ public class Login extends AppCompatActivity {
                         }
 
                         if(!found)
-                            Toast.makeText(getApplicationContext(), "Invalid Email/Password", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "Email or password is incorrect. Please try again", Toast.LENGTH_SHORT).show();
+                        else
+                           startActivity(shopIntentFromLogin);
 
 
                     }  catch (Exception e) {
-                        Toast.makeText(getApplicationContext(), "Invalid Email/Password", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "Email or password is incorrect. Please try again", Toast.LENGTH_SHORT).show();
                     }
                 }
 

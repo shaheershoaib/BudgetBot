@@ -28,6 +28,7 @@ public class Signup extends AppCompatActivity {
         Button backButtonSignup = (Button)findViewById(R.id.back_button_signup);
         Intent backButtonSignupIntent = new Intent(this, HomeScreen.class);
 
+        Intent shopIntentFromSignup = new Intent(this, Shop.class);
 
 
         backButtonSignup.setOnClickListener(new View.OnClickListener() {
@@ -110,6 +111,8 @@ public class Signup extends AppCompatActivity {
                             outputStream = openFileOutput(fileName, Context.MODE_APPEND);
                             outputStream.write(fileContents.getBytes());    //FileOutputStream is meant for writing streams of raw bytes.
                             outputStream.close();
+
+                            startActivity(shopIntentFromSignup);
                         } catch (IOException I) {
                             I.printStackTrace();
                         }

@@ -40,7 +40,8 @@
         android:textSize="25dp"
         android:textColorHint="#ffff25e6"
         android:layout_gravity="center"
-        android:layout_marginTop="25dp">
+        android:layout_marginTop="25dp"
+        android:id="@+id/email_login">
 
     </EditText>
 
@@ -55,7 +56,8 @@
         android:textColorHint="#ffff25e6"
         android:layout_gravity="center"
         android:layout_marginTop="25dp"
-        android:inputType="textPassword">
+        android:inputType="textPassword"
+        android:id="@+id/password_login">
 
     </EditText>
 
@@ -81,7 +83,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="SUBMIT"
-            android:layout_marginLeft="180dp">
+            android:layout_marginLeft="180dp"
+            android:id="@+id/submit_login">
 
         </Button>
 

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="155dp"
+        android:layout_height="195dp"
+        android:src="@drawable/logo"
+        android:layout_gravity="center">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/signup_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Log in"
+        android:textColor="@color/black"
+        android:textSize="35dp">
+
+    </TextView>
+
+
+
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="300dp"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+        android:textSize="25dp"
+        android:textColorHint="#ffff25e6"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp">
+
+    </EditText>
+
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="300dp"
+        android:hint="Enter Password"
+        android:textSize="25dp"
+        android:textColorHint="#ffff25e6"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:inputType="textPassword">
+
+    </EditText>
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="175dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BACK"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/back_button_login">
+
+        </Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT"
+            android:layout_marginLeft="180dp">
+
+        </Button>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

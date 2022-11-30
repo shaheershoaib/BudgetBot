@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Signup"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="155dp"
+        android:layout_height="195dp"
+        android:src="@drawable/logo"
+        android:layout_gravity="center">
+
+    </ImageView>
+    <TextView
+        android:id="@+id/signup_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Sign Up"
+        android:textColor="@color/black"
+        android:textSize="35dp">
+
+    </TextView>
+
+
+
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="300dp"
+        android:hint="Enter Email"
+        android:textSize="25dp"
+        android:textColorHint="#ffff25e6"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:inputType="textEmailAddress"
+        android:id="@+id/email_signup">
+
+    </EditText>
+
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="300dp"
+            android:hint="Enter Password"
+            android:textSize="25dp"
+            android:textColorHint="#ffff25e6"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:inputType="textPassword"
+            android:id="@+id/password_signup">
+
+        </EditText>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="300dp"
+        android:hint="Confirm Password"
+        android:textSize="25dp"
+        android:textColorHint="#ffff25e6"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:inputType="textPassword"
+        android:id="@+id/confirm_password_signup">
+
+    </EditText>
+    
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="100dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BACK"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/back_button_signup">
+
+        </Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT"
+            android:layout_marginLeft="180dp"
+            android:id="@+id/submit_signup">
+
+        </Button>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

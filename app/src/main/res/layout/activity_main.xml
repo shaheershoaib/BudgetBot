@@ -13,62 +13,75 @@
         android:layout_height="wrap_content"
         android:text="Budget"
         android:textSize="50dp"
-        android:id="@+id/budget"/>
+        android:id="@+id/budget"
+        android:textColor="@color/black"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Bot"
         android:textSize="50dp"
-        android:id="@+id/bot"/>
+        android:id="@+id/bot"
+        android:textColor="@color/black"/>
 
-    <ImageSwitcher
+    <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:id="@+id/logo">
 
-    </ImageSwitcher>
+    </ImageView>
+
+
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp">
+
+
 
         <ImageView
+            android:id="@+id/signup_logo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/signup_logo">
+            android:src="@drawable/signup"
+            android:layout_marginRight="10dp">
 
         </ImageView>
 
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/signup">
-    </Button>
-
-
-
-    </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/signup_button"
+            android:text="SIGNUP"
+            android:width="100dp">
+        </Button>
 
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+
 
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:id="@+id/login_logo"
+            android:layout_width="60dp"
+            android:layout_height="37dp"
+            android:src="@drawable/login"
+            android:layout_marginLeft="25dp">
 
         </ImageView>
 
 
-<Button
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:id="@+id/login"/>
+
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="100dp"
+            android:text="LOGIN" />
+
+
     </LinearLayout>
 
 </LinearLayout>

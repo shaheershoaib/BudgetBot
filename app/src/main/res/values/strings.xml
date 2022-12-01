@@ -1,3 +1,83 @@
 <resources>
-    <string name="app_name">BudgetBot</string>
+    <string name="app_name">TestingRec</string>
+
+    <string-array name="product_names">
+        <item>Gaming Chair</item>
+        <item>Office Chair</item>
+        <item>Wooden Chair</item>
+        <item>Kitchen Chair</item>
+        <item>Grey Sofa</item>
+        <item>Blue Sofa</item>
+        <item>Green Sofa</item>
+        <item>LG Fridge</item>
+        <item>Samsung Fridge</item>
+        <item>Round Wooden Table</item>
+        <item>Rectangular Wooden Table</item>
+        <item>Coffee Table</item>
+    </string-array>
+
+    <integer-array name="prices">
+        <item>180</item>
+        <item>90</item>
+        <item>40</item>
+        <item>45</item>
+        <item>1200</item>
+        <item>980</item>
+        <item>1320</item>
+        <item>3200</item>
+        <item>4350</item>
+        <item>230</item>
+        <item>300</item>
+        <item>400</item>
+    </integer-array>
+
+    <string-array name="product_type">
+        <item>Chair</item>
+        <item>Sofa</item>
+        <item>Fridge</item>
+        <item>Table</item>
+    </string-array>
+
+    <string-array name="chair_type">
+        <item>Gaming</item>
+        <item>Office</item>
+        <item>Wooden</item>
+        <item>Kitchen</item>
+    </string-array>
+
+    <string-array name="sofa_type">
+        <item>Grey</item>
+        <item>Blue</item>
+        <item>Green</item>
+    </string-array>
+
+    <string-array name="fridge_type">
+        <item>LG</item>
+        <item>Samsung</item>
+    </string-array>
+
+    <string-array name="table_type">
+        <item>Round Wooden</item>
+        <item>Rectangular Wooden</item>
+        <item>Coffee</item>
+    </string-array>
+
+    <string-array name="quantity_array">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+    </string-array>
 </resources>

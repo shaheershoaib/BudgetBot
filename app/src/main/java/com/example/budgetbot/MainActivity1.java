@@ -1,4 +1,4 @@
-package com.example.project341;
+package com.example.budgetbot;
 
 import androidx.appcompat.app.AppCompatActivity;
 

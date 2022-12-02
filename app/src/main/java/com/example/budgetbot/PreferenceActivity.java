@@ -41,6 +41,9 @@ public class PreferenceActivity extends AppCompatActivity {
                 return true;
             }
         });
+
+
+
         RecyclerView recyclerView = findViewById(R.id.mRecyclerView);
 
 

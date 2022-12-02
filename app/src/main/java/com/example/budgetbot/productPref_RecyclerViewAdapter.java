@@ -1,10 +1,12 @@
 package com.example.budgetbot;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -32,7 +34,11 @@ public class productPref_RecyclerViewAdapter extends RecyclerView.Adapter<produc
     public productPref_RecyclerViewAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(context);
         View view = inflater.inflate(R.layout.recycler_view_row_pref, parent, false);
+
+
+
         return new productPref_RecyclerViewAdapter.MyViewHolder(view);
+
     }
 
     @Override
@@ -67,6 +73,7 @@ public class productPref_RecyclerViewAdapter extends RecyclerView.Adapter<produc
         TextView productView;
         Spinner typeSpinner;
         TextView quantityTextView;
+
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
@@ -86,16 +93,8 @@ public class productPref_RecyclerViewAdapter extends RecyclerView.Adapter<produc
                 }
             });
 
-            itemView.findViewById(R.id.addBtn).setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    int newQuantity = Integer.parseInt(quantityTextView.getText().toString()) + 1;
-                    quantityTextView.setText(String.valueOf(newQuantity));
 
 
-
-                }
-            });
 
         }
     }

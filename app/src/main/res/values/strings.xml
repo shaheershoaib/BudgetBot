@@ -80,4 +80,22 @@
         <item>14</item>
         <item>15</item>
     </string-array>
+
+    <string-array name="items">
+        <item>Office chair</item>
+        <item>Gaming chair</item>
+        <item>Table chair</item>
+    </string-array>
+
+    <integer-array name="prices">
+        <item>60</item>
+        <item>150</item>
+        <item>40</item>
+    </integer-array>
+
+    <integer-array name="amounts">
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+    </integer-array>
 </resources>

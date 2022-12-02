@@ -1,4 +1,4 @@
-package com.example.budgetbotcart;
+package com.example.budgetbot;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -56,7 +56,7 @@ public class Cart extends AppCompatActivity implements Item_RV_Adapter.AdapterCa
 
     private void setupItemModel(){
         String[] itemNames = getResources().getStringArray(R.array.items);
-        int [] itemPrices = getResources().getIntArray(R.array.prices);
+        int [] itemPrices = getResources().getIntArray(R.array.cart_prices);
         int [] itemAmount = getResources().getIntArray(R.array.amounts);
 
         for(int i =0; i<itemNames.length; i++){

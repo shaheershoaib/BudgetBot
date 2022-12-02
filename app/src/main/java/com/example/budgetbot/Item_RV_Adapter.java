@@ -1,4 +1,4 @@
-package com.example.budgetbotcart;
+package com.example.budgetbot;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

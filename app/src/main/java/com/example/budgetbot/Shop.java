@@ -35,5 +35,14 @@ public class Shop extends AppCompatActivity {
 
             } });
 
+        Button shopButton = (Button)findViewById(R.id.shop_button);
+        Intent searchProdIntent = new Intent(this, SearchProducts.class);
+        shopButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(searchProdIntent);
+
+            } });
+
+
     }
 }

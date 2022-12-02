@@ -20,12 +20,12 @@ public class MainActivity2 extends AppCompatActivity {
 
     private ArrayAdapter arrayAdapter;
 
-    @SuppressLint("RestrictedApi")
+    //@SuppressLint("RestrictedApi")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-        getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
+       getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
 
         ListView listview= findViewById(R.id.listview);
         EditText theFilter = (EditText) findViewById(R.id.searchFilter);

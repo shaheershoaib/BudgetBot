@@ -46,6 +46,53 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
+
+        <activity
+            android:name=".PreferenceActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <activity
+            android:name=".SearchProducts"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <activity
+            android:name=".LampsActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity2"/>
+        <activity
+            android:name=".TableActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity2"/>
+        <activity
+            android:name=".ChairActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity2"/>
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false"
+            android:parentActivityName=".MainActivity1"/>
+        <activity
+            android:name=".MainActivity1"
+            android:exported="false">
+        </activity>
+
+        <activity
+            android:name=".Cart"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
     </application>
 
 </manifest>

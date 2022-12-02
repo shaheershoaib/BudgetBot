@@ -1,4 +1,4 @@
-package com.example.testingrec;
+package com.example.budgetbot;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SearchView;

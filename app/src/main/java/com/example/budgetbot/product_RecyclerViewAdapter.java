@@ -1,4 +1,4 @@
-package com.example.testingrec;
+package com.example.budgetbot;
 
 import android.content.Context;
 import android.view.LayoutInflater;

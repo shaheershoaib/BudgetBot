@@ -1,4 +1,4 @@
-package com.example.testingrec;
+package com.example.budgetbot;
 
 public class product {
     String productName;

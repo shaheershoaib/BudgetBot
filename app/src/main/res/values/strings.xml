@@ -87,7 +87,7 @@
         <item>Table chair</item>
     </string-array>
 
-    <integer-array name="prices">
+    <integer-array name="cart_prices">
         <item>60</item>
         <item>150</item>
         <item>40</item>

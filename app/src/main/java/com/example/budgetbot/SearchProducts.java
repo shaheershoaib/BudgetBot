@@ -50,6 +50,15 @@ public class SearchProducts extends AppCompatActivity {
 
             } });
 
+            Button prefBtnFromSearch = (Button)findViewById(R.id.recommendBtn);
+            Intent goToPrefIntent = new Intent(this, PreferenceActivity.class);
+
+            prefBtnFromSearch.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(goToPrefIntent);
+
+            } });
+
 
 
         searchView = findViewById(R.id.searchView);

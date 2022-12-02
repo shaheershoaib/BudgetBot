@@ -38,7 +38,7 @@ public class Cart extends AppCompatActivity implements Item_RV_Adapter.AdapterCa
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        
+
 
 
 

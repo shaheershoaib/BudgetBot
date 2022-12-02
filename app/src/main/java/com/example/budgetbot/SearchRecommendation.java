@@ -16,11 +16,11 @@ import android.widget.ListView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity2 extends AppCompatActivity {
+public class SearchRecommendation extends AppCompatActivity {
 
     private ArrayAdapter arrayAdapter;
 
-    //@SuppressLint("RestrictedApi")
+    @SuppressLint("RestrictedApi")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,7 +49,7 @@ public class MainActivity2 extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                (MainActivity2.this).arrayAdapter.getFilter().filter(charSequence);
+                (SearchRecommendation.this).arrayAdapter.getFilter().filter(charSequence);
 
             }
 
@@ -66,14 +66,14 @@ public class MainActivity2 extends AppCompatActivity {
 
                 if(i == 0){
 
-                    startActivity(new Intent(MainActivity2.this, ChairActivity.class));
+                    startActivity(new Intent(SearchRecommendation.this, ChairActivity.class));
                 }else if (i == 1){
 
-                    startActivity(new Intent(MainActivity2.this, TableActivity.class));
+                    startActivity(new Intent(SearchRecommendation.this, TableActivity.class));
 
                 }else {
 
-                    startActivity(new Intent(MainActivity2.this, LampsActivity.class));
+                    startActivity(new Intent(SearchRecommendation.this, LampsActivity.class));
                 }
             }
         });

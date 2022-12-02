@@ -9,6 +9,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import java.io.FileOutputStream;
@@ -30,9 +31,26 @@ public class SearchProducts extends AppCompatActivity {
         setContentView(R.layout.activity_search_products);
 
 
+        Button goToCartFromSearchButton = (Button)findViewById(R.id.nextBtn);
+        Intent goToCartIntent = new Intent(this, Cart.class);
+
+        goToCartFromSearchButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(goToCartIntent);
+
+            } });
 
 
-        //Toast.makeText(this, "Inside of oncreate of main", Toast.LENGTH_LONG).show();
+        Button returnToShopFromSearchButton = (Button)findViewById(R.id.backBtn);
+        Intent goToShopFromSearchIntent = new Intent(this, Shop.class);
+
+        returnToShopFromSearchButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(goToShopFromSearchIntent);
+
+            } });
+
+
 
         searchView = findViewById(R.id.searchView);
 

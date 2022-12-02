@@ -7,8 +7,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
-public class MainActivity1 extends AppCompatActivity {
+public class Recommendation extends AppCompatActivity {
 
     private Button search;
 
@@ -18,7 +19,7 @@ public class MainActivity1 extends AppCompatActivity {
 
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main1);
+        setContentView(R.layout.activity_recommendation);
         getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
 
         search= (Button) findViewById(R.id.search);
@@ -29,10 +30,23 @@ public class MainActivity1 extends AppCompatActivity {
             }
         });
 
+
+        ImageButton cartButton = (ImageButton)findViewById(R.id.imageButton);
+        Intent cartIntent = new Intent(this, Cart.class);
+        cartButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(cartIntent);
+            }
+        });
+
     }
 
+
+
+
     private void openActivity2() {
-        Intent intent = new Intent(this, MainActivity2.class);
+        Intent intent = new Intent(this, SearchRecommendation.class);
         startActivity(intent);
     }
 

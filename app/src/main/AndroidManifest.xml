@@ -67,22 +67,23 @@
         <activity
             android:name=".LampsActivity"
             android:exported="false"
-            android:parentActivityName=".MainActivity2"/>
+            android:parentActivityName=".SearchRecommendation"/>
         <activity
             android:name=".TableActivity"
             android:exported="false"
-            android:parentActivityName=".MainActivity2"/>
+            android:parentActivityName=".SearchRecommendation"/>
         <activity
             android:name=".ChairActivity"
             android:exported="false"
-            android:parentActivityName=".MainActivity2"/>
+            android:parentActivityName=".SearchRecommendation"/>
         <activity
-            android:name=".MainActivity2"
+            android:name=".SearchRecommendation"
             android:exported="false"
-            android:parentActivityName=".MainActivity1"/>
+            android:parentActivityName=".Recommendation"/>
         <activity
-            android:name=".MainActivity1"
-            android:exported="false">
+            android:name=".Recommendation"
+            android:exported="false"
+            android:parentActivityName=".Shop">
         </activity>
 
         <activity

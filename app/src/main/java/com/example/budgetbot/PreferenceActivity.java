@@ -100,7 +100,10 @@ public class PreferenceActivity extends AppCompatActivity {
 
     public void backToSearch(View view){
         Intent intent = new Intent(this, SearchProducts.class);
+        TextView budget = findViewById(R.id.budgetText);
+        intent.putExtra("budget", Integer.parseInt(budget.getText().toString()));
         startActivity(intent);
+
     }
 
     public void storePreferences(View view){

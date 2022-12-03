@@ -24,8 +24,8 @@ public class Cart extends AppCompatActivity implements Item_RV_Adapter.AdapterCa
     int itemCount = 2;
     public static TextView budget_rem;
     int budget_calc;
-    int budget_original = 500;
-    int budget_remaining = budget_original;
+    int budget_original;
+    int budget_remaining;
     TextView tv;
 
     private Item_RV_Adapter mMyAdapter;
@@ -53,8 +53,16 @@ public class Cart extends AppCompatActivity implements Item_RV_Adapter.AdapterCa
         super.onCreate(savedInstanceState);
         setContentView(R.layout.cart_layout);
 
+        Intent intent = getIntent();
+        budget_original = intent.getIntExtra("budget",0);
+        Toast.makeText(getApplicationContext(), "Ybdgt" + budget_original, Toast.LENGTH_LONG).show();
+
+
+        budget_remaining = budget_original;
+
         RecyclerView recyclerView = findViewById(R.id.mRecycleView);
         tv = findViewById(R.id.budget_rem);
+
 
 
 
@@ -127,6 +135,7 @@ public class Cart extends AppCompatActivity implements Item_RV_Adapter.AdapterCa
         int total;
         total = budget_original-budget_remaining;
         Toast.makeText(getApplicationContext(), "total is: $" + total, Toast.LENGTH_LONG).show();
+
 //        Intent intent = new Intent(this,checkout.class);
 //        startActivity(intent);
 

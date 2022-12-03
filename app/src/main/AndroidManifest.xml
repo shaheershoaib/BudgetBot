@@ -13,6 +13,20 @@
         android:theme="@style/Theme.BudgetBot"
         tools:targetApi="31">
         <activity
+            android:name=".AddressSet"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Checkout"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".Shop"
             android:exported="false">
             <meta-data
@@ -79,7 +93,7 @@
         <activity
             android:name=".Recommendation"
             android:exported="false"
-            android:parentActivityName=".Shop"></activity>
+            android:parentActivityName=".Shop" />
         <activity
             android:name=".Cart"
             android:exported="false">

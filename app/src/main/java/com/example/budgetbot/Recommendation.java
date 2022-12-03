@@ -21,7 +21,8 @@ public class Recommendation extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recommendation);
         getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
-
+        Intent intent = getIntent();
+        int budget = (intent.getIntExtra("budget",0));
         search= (Button) findViewById(R.id.search);
         search.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,6 +37,8 @@ public class Recommendation extends AppCompatActivity {
         cartButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                cartIntent.putExtra("budget", budget);
+
                 startActivity(cartIntent);
             }
         });

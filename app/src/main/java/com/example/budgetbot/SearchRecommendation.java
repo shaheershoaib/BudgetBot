@@ -15,6 +15,7 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 import java.util.List;
+@SuppressWarnings("unchecked")
 
 public class SearchRecommendation extends AppCompatActivity {
 
@@ -26,6 +27,10 @@ public class SearchRecommendation extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
        getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
+
+        Intent intent = getIntent();
+        int budget = (intent.getIntExtra("budget",0));
+
 
         ListView listview= findViewById(R.id.listview);
         EditText theFilter = (EditText) findViewById(R.id.searchFilter);

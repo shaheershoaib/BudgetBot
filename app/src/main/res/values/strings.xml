@@ -81,13 +81,13 @@
         <item>15</item>
     </string-array>
 
-<string-array name="items">
+    <string-array name="items">
         <item>Office chair</item>
         <item>Gaming chair</item>
         <item>Table chair</item>
     </string-array>
 
-    <integer-array name="prices">
+    <integer-array name="cart_prices">
         <item>100</item>
         <item>10</item>
         <item>10</item>

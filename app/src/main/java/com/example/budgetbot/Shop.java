@@ -45,11 +45,11 @@ public class Shop extends AppCompatActivity {
 
 
         Button recommendButton = (Button)findViewById(R.id.reccommend_button);
-        Intent recomendIntent = new Intent(this, Recommendation.class);
+        Intent recommendIntent = new Intent(this, PreferenceActivity.class);
 
         recommendButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                startActivity(recomendIntent);
+                startActivity(recommendIntent);
 
             } });
 

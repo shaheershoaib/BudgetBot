@@ -1,4 +1,4 @@
-package com.example.budgetbotcart;
+package com.example.budgetbot;
 
 import android.widget.Button;
 

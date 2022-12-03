@@ -1,4 +1,4 @@
-package com.example.budgetbotcart;
+package com.example.budgetbot;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -60,7 +61,7 @@ public class Cart extends AppCompatActivity implements Item_RV_Adapter.AdapterCa
 
 //      below will be done using fis
         String[] itemNames = getResources().getStringArray(R.array.items);
-        int [] itemPrices = getResources().getIntArray(R.array.prices);
+        int [] itemPrices = getResources().getIntArray(R.array.cart_prices);
         int [] itemAmount = getResources().getIntArray(R.array.amounts);
 
         for(int i =0; i<itemNames.length; i++) {
@@ -69,7 +70,12 @@ public class Cart extends AppCompatActivity implements Item_RV_Adapter.AdapterCa
 
 //        setupItemModel(); <-- not needed; can build in on-create, can use fis here
 
+        Button goBackFromCart = (Button)findViewById(R.id.back_button);
+        goBackFromCart.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                finish();
 
+            } });
 
 
 
@@ -128,9 +134,5 @@ public class Cart extends AppCompatActivity implements Item_RV_Adapter.AdapterCa
 
     }
 
-    public void back_action(View view){
-        finish();
-       // Toast.makeText(getApplicationContext(), "goes to previous page" , Toast.LENGTH_LONG).show();
 
-    }
 }

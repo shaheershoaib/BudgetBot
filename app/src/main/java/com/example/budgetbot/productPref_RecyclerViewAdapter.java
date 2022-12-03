@@ -93,6 +93,14 @@ public class productPref_RecyclerViewAdapter extends RecyclerView.Adapter<produc
                 }
             });
 
+            itemView.findViewById(R.id.addBtn).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    int newQuantity = Integer.parseInt(quantityTextView.getText().toString()) + 1;
+                    quantityTextView.setText(String.valueOf(newQuantity));
+                }
+            });
+
 
 
 

@@ -46,8 +46,6 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
-
         <activity
             android:name=".PreferenceActivity"
             android:exported="false">
@@ -55,7 +53,6 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
         <activity
             android:name=".SearchProducts"
             android:exported="false">
@@ -63,29 +60,26 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
         <activity
             android:name=".LampsActivity"
             android:exported="false"
-            android:parentActivityName=".SearchRecommendation"/>
+            android:parentActivityName=".SearchRecommendation" />
         <activity
             android:name=".TableActivity"
             android:exported="false"
-            android:parentActivityName=".SearchRecommendation"/>
+            android:parentActivityName=".SearchRecommendation" />
         <activity
             android:name=".ChairActivity"
             android:exported="false"
-            android:parentActivityName=".SearchRecommendation"/>
+            android:parentActivityName=".SearchRecommendation" />
         <activity
             android:name=".SearchRecommendation"
             android:exported="false"
-            android:parentActivityName=".Recommendation"/>
+            android:parentActivityName=".Recommendation" />
         <activity
             android:name=".Recommendation"
             android:exported="false"
-            android:parentActivityName=".Shop">
-        </activity>
-
+            android:parentActivityName=".Shop"></activity>
         <activity
             android:name=".Cart"
             android:exported="false">
@@ -93,7 +87,6 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
     </application>
 
 </manifest>

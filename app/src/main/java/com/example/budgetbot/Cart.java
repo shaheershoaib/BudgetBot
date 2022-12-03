@@ -21,9 +21,7 @@ import java.util.ArrayList;
 public class Cart extends AppCompatActivity implements Item_RV_Adapter.AdapterCallback {
 
     ArrayList<Item_model> itemModel = new ArrayList<>();
-    int itemCount = 2;
     public static TextView budget_rem;
-    int budget_calc;
     int budget_original;
     int budget_remaining;
     TextView tv;
@@ -55,8 +53,6 @@ public class Cart extends AppCompatActivity implements Item_RV_Adapter.AdapterCa
 
         Intent intent = getIntent();
         budget_original = intent.getIntExtra("budget",0);
-        Toast.makeText(getApplicationContext(), "Ybdgt" + budget_original, Toast.LENGTH_LONG).show();
-
 
         budget_remaining = budget_original;
 

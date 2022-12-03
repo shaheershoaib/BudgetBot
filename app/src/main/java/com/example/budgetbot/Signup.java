@@ -51,7 +51,7 @@ public class Signup extends AppCompatActivity {
             public void onClick(View v) {
 
 
-                String emailSignupValue = emailSignup.getText().toString();
+                String emailSignupValue = emailSignup.getText().toString().trim();
                 String passwordSignupValue = passwordSignup.getText().toString();
                 String confirmPasswordSignupValue = confirmPasswordSignup.getText().toString();
 

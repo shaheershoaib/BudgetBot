@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 public class Recommendation extends AppCompatActivity {
 
@@ -23,11 +24,16 @@ public class Recommendation extends AppCompatActivity {
         getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
         Intent intent = getIntent();
         int budget = (intent.getIntExtra("budget",0));
+        TextView budgetRem = (TextView) findViewById(R.id.textView2);
+        budgetRem.setText("$"+String.valueOf(budget));
         search= (Button) findViewById(R.id.search);
+        Intent intent2 = new Intent(this, SearchRecommendation.class);
+        intent2.putExtra("budget", budget);
+
         search.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openActivity2();
+                startActivity(intent2);
             }
         });
 
@@ -43,15 +49,18 @@ public class Recommendation extends AppCompatActivity {
             }
         });
 
+
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return true;
     }
 
 
 
 
-    private void openActivity2() {
-        Intent intent = new Intent(this, SearchRecommendation.class);
-        startActivity(intent);
-    }
 
 
 }

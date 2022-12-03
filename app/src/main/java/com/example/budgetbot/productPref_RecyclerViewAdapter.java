@@ -1,12 +1,10 @@
 package com.example.budgetbot;
 
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -77,7 +75,7 @@ public class productPref_RecyclerViewAdapter extends RecyclerView.Adapter<produc
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            productView = itemView.findViewById(R.id.textView2);
+            productView = itemView.findViewById(R.id.textview2);
             //quantitySpinner = itemView.findViewById(R.id.spinner2);
             typeSpinner = itemView.findViewById(R.id.spinner3);
             quantityTextView = itemView.findViewById(R.id.quantityTxt);

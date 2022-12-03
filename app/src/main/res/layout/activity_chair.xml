@@ -12,7 +12,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".Recommendation">
+        tools:context=".SearchRecommendation">
 
         <TextView
             android:id="@+id/textView9"
@@ -192,5 +192,3 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>
-
-

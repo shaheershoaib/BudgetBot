@@ -70,15 +70,23 @@ public class SearchRecommendation extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
                 if(i == 0){
+                   Intent chairIntent =  new Intent(SearchRecommendation.this, ChairActivity.class);
+                   chairIntent.putExtra("budget", budget);
+                    startActivity(chairIntent);
+                    finish();
 
-                    startActivity(new Intent(SearchRecommendation.this, ChairActivity.class));
                 }else if (i == 1){
 
-                    startActivity(new Intent(SearchRecommendation.this, TableActivity.class));
+                    Intent tableIntent =  new Intent(SearchRecommendation.this, TableActivity.class);
+                    tableIntent.putExtra("budget", budget);
+                    startActivity(tableIntent);
+                    finish();
 
                 }else {
-
-                    startActivity(new Intent(SearchRecommendation.this, LampsActivity.class));
+                    Intent lampIntent =  new Intent(SearchRecommendation.this, LampsActivity.class);
+                    lampIntent.putExtra("budget", budget);
+                    startActivity(lampIntent);
+                    finish();
                 }
             }
         });

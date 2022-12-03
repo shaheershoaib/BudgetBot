@@ -51,10 +51,15 @@ public class PreferenceActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 EditText setBudget = (EditText)findViewById(R.id.budgetText);
-                int budget = Integer.parseInt(setBudget.getText().toString());
-                goToRecommendFromPref.putExtra("budget", budget);
-                startActivity(goToRecommendFromPref);
+                String budgetString = setBudget.getText().toString();
+                if(budgetString.trim().equals(""))
+                    Toast.makeText(getApplicationContext(),"Please enter a budget",Toast.LENGTH_SHORT).show();
 
+                else {
+                    int budget = Integer.parseInt(budgetString);
+                    goToRecommendFromPref.putExtra("budget", budget);
+                    startActivity(goToRecommendFromPref);
+                }
 
 
 
@@ -99,10 +104,9 @@ public class PreferenceActivity extends AppCompatActivity {
     }
 
     public void backToSearch(View view){
-        Intent intent = new Intent(this, SearchProducts.class);
-        TextView budget = findViewById(R.id.budgetText);
-        intent.putExtra("budget", Integer.parseInt(budget.getText().toString()));
-        startActivity(intent);
+
+
+        finish();
 
     }
 
@@ -112,7 +116,7 @@ public class PreferenceActivity extends AppCompatActivity {
         String fileContents = "";
         for (int i = 0; i < rec.getChildCount(); i++) {
             TextView quantityTxt = (TextView) rec.findViewHolderForAdapterPosition(i).itemView.findViewById(R.id.quantityTxt);
-            TextView productText = (TextView) rec.findViewHolderForAdapterPosition(i).itemView.findViewById(R.id.textView2);
+            TextView productText = (TextView) rec.findViewHolderForAdapterPosition(i).itemView.findViewById(R.id.textview2);
             Spinner typeSpinner = (Spinner) rec.findViewHolderForAdapterPosition(i).itemView.findViewById(R.id.spinner3);;
             String product = productText.getText().toString();
             String quantity = quantityTxt.getText().toString();

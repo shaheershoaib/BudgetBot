@@ -77,15 +77,31 @@
         <activity
             android:name=".LampsActivity"
             android:exported="false"
-            android:parentActivityName=".SearchRecommendation" />
+            android:parentActivityName=".SearchRecommendation" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.budgetbot.SearchRecommendation"/>
+
+        </activity>
         <activity
             android:name=".TableActivity"
             android:exported="false"
-            android:parentActivityName=".SearchRecommendation" />
+            android:parentActivityName=".SearchRecommendation" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.budgetbot.SearchRecommendation"/>
+
+        </activity>
         <activity
             android:name=".ChairActivity"
             android:exported="false"
-            android:parentActivityName=".SearchRecommendation" />
+            android:parentActivityName=".SearchRecommendation">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.budgetbot.SearchRecommendation"/>
+
+        </activity>
+
         <activity
             android:name=".SearchRecommendation"
             android:exported="false"

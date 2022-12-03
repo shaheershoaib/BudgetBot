@@ -36,7 +36,6 @@ public class SearchProducts extends AppCompatActivity {
         Button goToCartFromSearchButton = (Button)findViewById(R.id.nextBtn);
         Intent goToCartIntent = new Intent(this, Cart.class);
         goToCartIntent.putExtra("budget", budget);
-        Toast.makeText(getApplicationContext(), "You have used up all your budget" + budget, Toast.LENGTH_LONG).show();
 
         goToCartFromSearchButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {

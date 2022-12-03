@@ -43,7 +43,7 @@ public class Login extends AppCompatActivity {
         submitLogin.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                String emailLoginValue = emailLogin.getText().toString();
+                String emailLoginValue = emailLogin.getText().toString().trim();
                 String passwordLoginValue = passwordLogin.getText().toString();
 
 

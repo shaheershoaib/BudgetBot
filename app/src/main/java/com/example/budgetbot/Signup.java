@@ -126,8 +126,6 @@ public class Signup extends AppCompatActivity {
 
     }
 
-
-
     public boolean isValidEmail(CharSequence target) {
         if (target == null)
             return false;

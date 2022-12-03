@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -45,9 +46,17 @@ public class PreferenceActivity extends AppCompatActivity {
 
         Button recommendButton = (Button)findViewById(R.id.submitBtn);
         Intent goToRecommendFromPref = new Intent(this, Recommendation.class);
+
         recommendButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+
+                EditText setBudget = (EditText)findViewById(R.id.budgetText);
+                int budget = Integer.parseInt(setBudget.getText().toString());
+                goToRecommendFromPref.putExtra("budget", budget);
                 startActivity(goToRecommendFromPref);
+
+
+
 
             } });
 

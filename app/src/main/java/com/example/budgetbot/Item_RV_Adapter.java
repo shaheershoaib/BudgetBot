@@ -93,17 +93,17 @@ public class Item_RV_Adapter extends RecyclerView.Adapter<Item_RV_Adapter.MyView
         holder.minus_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 count[position]--;
-                if(count[position]<=0){
+
+                if(count[position]<0){
                     holder.itemAmount.setText(Integer.toString(0));
                     holder.itemPrice.setText(Integer.toString(0));
 
                     Toast.makeText(context.getApplicationContext(),"Item will be deleted",Toast.LENGTH_SHORT).show();
 
-                    if(slice) {
-                        slice = false;
-                        mAdapterCallback.onMethodCallback(String.valueOf(-item_models.get(position).getItemPrice()));
-                    }
+                        //mAdapterCallback.onMethodCallback(String.valueOf(-item_models.get(position).getItemPrice()));
+
 
                 }else {
                     Log.d("341", "" + position);
@@ -117,12 +117,13 @@ public class Item_RV_Adapter extends RecyclerView.Adapter<Item_RV_Adapter.MyView
 
                     holder.itemPrice.setText(String.valueOf(temp3[position]));
 
-                    slice = true;
                     mAdapterCallback.onMethodCallback(String.valueOf(-temp1[position]));
 //                  there is a problem with this: if go from 1 to 0 then budget is lost forever
 
 //                    mAdapterCallback.onMethodCallback("Budget Remaining: $"+ String.valueOf(temp3[position]));
                 }
+
+
             }
         });
 

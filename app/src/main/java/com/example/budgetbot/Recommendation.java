@@ -50,6 +50,7 @@ public class Recommendation extends AppCompatActivity {
             public void onClick(View v) {
                 cartIntent.putExtra("budget", budget);
 
+               // cartIntent.putExtra("coming from", "recommendation");
                 startActivity(cartIntent);
             }
         });

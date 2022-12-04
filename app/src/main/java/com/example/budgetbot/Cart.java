@@ -77,6 +77,17 @@ public class Cart extends AppCompatActivity implements Item_RV_Adapter.AdapterCa
         Button goBackFromCart = (Button)findViewById(R.id.back_button);
         goBackFromCart.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+              /*  String Previous = intent.getStringExtra("coming from");
+                if(Previous.equals("Recommendation"))
+                {
+                    Intent intent1 = new Intent(getApplicationContext(), Recommendation.class);
+                    startActivity(intent1);
+                }
+                else{
+                    Intent intent2 = new Intent(getApplicationContext(), SearchProducts.class);
+                    startActivity(intent2);
+                }*/
+
                 finish();
 
             } });
@@ -137,6 +148,11 @@ public class Cart extends AppCompatActivity implements Item_RV_Adapter.AdapterCa
 
 
 
+    }
+
+    public void goToAddressPage(View view){
+        Intent intent = new Intent(this, SetAddress.class);
+        startActivity(intent);
     }
 
 

@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -23,6 +24,7 @@ public class product_RecyclerViewAdapter extends RecyclerView.Adapter<product_Re
 
      static Context context;
     ArrayList<product> productList;
+    static Toast toast;
     public product_RecyclerViewAdapter(Context context, ArrayList<product> productList){
         this.context = context;
         this.productList = productList;
@@ -74,14 +76,33 @@ public class product_RecyclerViewAdapter extends RecyclerView.Adapter<product_Re
                          outputStream = context.openFileOutput(filename, Context.MODE_APPEND);
                          outputStream.write(fileContents.getBytes());    //FileOutputStream is meant for writing streams of raw bytes.
                          outputStream.close();
-                         Toast.makeText(context, "Item added successfully", Toast.LENGTH_LONG).show();
+                         //Toast.makeText(context, "Item added successfully", Toast.LENGTH_LONG).show();
 
                      } catch (Exception e) {
 
                          e.printStackTrace();
                      }
+                     Button addBtn = itemView.findViewById(R.id.addToCartBtn);
+
+                     if(addBtn.getText().toString().toLowerCase().equals("add to cart")) {
+                         if(toast!=null)
+                             toast.cancel();
+                         toast = Toast.makeText(context, "Item added successfully", Toast.LENGTH_SHORT);
+                         toast.show();
+                         addBtn.setText("Remove");
+                     }
+
+                     else{
+                         if(toast!=null)
+                             toast.cancel();
+                         toast =  Toast.makeText(context, "Item removed successfully", Toast.LENGTH_SHORT);
+                         toast.show();
+                         addBtn.setText("add to cart");
+                     }
                     //writeFileContent(fileContents, this);
                  }
+
+
              });
 
 

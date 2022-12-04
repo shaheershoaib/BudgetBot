@@ -11,7 +11,7 @@ public class SetAddress extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_set_address);
+        setContentView(R.layout.activity_address_set);
     }
 
     public void goBack(View view){

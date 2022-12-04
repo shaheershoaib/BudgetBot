@@ -26,34 +26,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
-    <RadioGroup
-        android:layout_width="188dp"
-        android:layout_height="155dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="128dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <RadioButton
-            android:id="@+id/credit_radio"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Credit Card" />
-
-        <RadioButton
-            android:id="@+id/google_radio"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Google Pay" />
-
-        <RadioButton
-            android:id="@+id/apple_radio"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Apple Pay" />
-
-    </RadioGroup>
-
     <TextView
         android:id="@+id/test"
         android:layout_width="wrap_content"

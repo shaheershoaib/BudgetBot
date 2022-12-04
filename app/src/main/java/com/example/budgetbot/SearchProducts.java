@@ -166,4 +166,6 @@ public class SearchProducts extends AppCompatActivity {
         startActivity(intent);
     }
 
+
+
 }
